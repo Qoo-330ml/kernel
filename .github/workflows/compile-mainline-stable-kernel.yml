@@ -5,7 +5,8 @@
 #==========================================================================
 
 name: Compile mainline stable kernel
-
+permissions:                   # 顶层加在这里
+  contents: write
 on:
   repository_dispatch:
   workflow_dispatch:
